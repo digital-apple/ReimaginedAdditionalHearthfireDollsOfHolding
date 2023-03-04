@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://qconsulting.ca/fo3/ModConfig5.0.xsd">
+    <moduleName>Reimagined Additional Hearthfire Dolls (Of Holding)</moduleName>
+    <requiredInstallFiles>
+        <folder source="Required" destination="" />
+    </requiredInstallFiles>
+    <installSteps order="Explicit">
+        <installStep name="Main">
+            <optionalFileGroups order="Explicit">
+                <group type="SelectAtLeastOne">
+                    <plugins order="Explicit">
+						<plugin name="Main File">
+							<description>A reimagination of kelretu's "Additional Hearthfire Dolls" mod, which essentially turns the collectable dolls into cute mini bags of holding.</description>
+                            <files>
+                                <folder source="Required" destination="" priority="0" />
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="Recommended" />
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>					
+
+                    </plugins>
+                </group>
+            </optionalFileGroups>
+        </installStep>
+		
+		<installStep name="Patchs">
+			<optionalFileGroups order="Explicit">
+				<group type="SelectAtMostOne">
+					<plugins order="Explicit">
+						<plugin name="Requiem Patch">
+                            <description>Select this if you have Requiem - The Roleplaying Overhaul installed.</description>
+                            <files>
+                                <folder source="Requiem" destination="" priority="0" />
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="Optional" />
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>
+                        <plugin name="FTweaks Patch">
+                            <description>Select this if you have FTweaks installed.</description>
+                            <files>
+                                <folder source="FTweaks" destination="" priority="0" />
+                            </files>
+                            <typeDescriptor>
+                                <dependencyType>
+                                    <defaultType name="Optional" />
+                                </dependencyType>
+                            </typeDescriptor>
+                        </plugin>					
+					</plugins>
+				</group>
+			</optionalFileGroups>
+		</installStep>
+    </installSteps>
+</config>
